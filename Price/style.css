@@ -1,0 +1,158 @@
+/* 全体の基本設定 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #ffffff;
+    color: #333c5e; /* メインの濃いネイビーグレー */
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+/* 見出しのデザイン */
+.section-title {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid #333c5e; /* アンダーライン */
+}
+
+/* --- 料金テーブル --- */
+.price-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.price-table th {
+    background-color: #8e8678; /* ヘッダーのベージュグレー */
+    color: #ffffff;
+    padding: 14px;
+    font-weight: 700;
+    border: 1px solid #ffffff;
+}
+
+.price-table td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* 黄色の強調行 */
+.price-table tr.highlight {
+    background-color: #ffcc00;
+    font-weight: 700;
+}
+
+/* --- カードレイアウト --- */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.detail-card {
+    flex: 1;
+    border: 1.5px solid #333c5e;
+    border-radius: 18px; /* 大きめの角丸 */
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.card-icon {
+    flex: 0 0 60px; /* アイコン幅固定 */
+}
+
+.card-icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content p {
+    font-size: 0.88rem;
+    margin: 0;
+}
+
+/* --- サポートセクション --- */
+.support-container {
+    text-align: left;
+    max-width: 750px;
+    margin: 0 auto 80px;
+}
+
+.support-item {
+    margin-bottom: 40px;
+}
+
+.support-item h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.support-item p {
+    font-size: 0.92rem;
+    color: #444;
+}
+
+/* --- フッターリンク --- */
+.footer {
+    margin-top: 50px;
+}
+
+.top-link {
+    color: #333c5e;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* --- モバイル対応 --- */
+@media (max-width: 700px) {
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .detail-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .price-table td, .price-table th {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+}

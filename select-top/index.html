@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デザインを作成する</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <h1 class="title">デザインを作成する</h1>
+        <p class="subtitle">Tシャツのベース背景をお選びください</p>
+
+        <div class="button-group">
+  <button type="button" class="choice-button" data-href="/lp/sub1/">単色</button>
+  <button type="button" class="choice-button" data-href="/lp/sub2/">柄</button>
+</div>
+
+
+<script>
+  console.log("choice-button script loaded");
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.choice-button');
+    if (!btn) return;
+    console.log("navigate to:", btn.dataset.href);
+    window.location.assign(btn.dataset.href);
+  }, true);
+</script>
+
+<!-- DEBUG: select-top index -->
+<div style="position:fixed;bottom:10px;right:10px;background:#000;color:#fff;padding:6px 10px;z-index:99999;">
+  DEBUG: select-top updated
+</div>
+
+<script>
+  console.log("choice-button script loaded");
+
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.choice-button');
+    if (!btn) return;
+
+    console.log("navigate to:", btn.dataset.href);
+    window.location.assign(btn.dataset.href);
+  }, true);
+</script>
+
+
+        <a href="../TOP/" class="top-link">TOPへ</a>
+    </main>
+
+</body>
+
+</html>

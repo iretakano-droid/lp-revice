@@ -1,0 +1,100 @@
+/* =======================================
+   1. リセットと基本設定
+   ======================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #ffffff; /* 基本の文字色を白に設定 */
+    background-color: #0d122e; /* ディープネイビーを背景色に設定 */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffd700; /* ゴールド */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* 輝きを表現 */
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #ffd700;
+}
+
+section {
+    padding: 60px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* =======================================
+   2. CTAボタン
+   ======================================= */
+.cta-button {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.primary-cta {
+    background-color: #ffd700; /* ゴールド */
+    color: #0d122e;
+    font-size: 1.2em;
+}
+
+.primary-cta:hover {
+    background-color: #ffc400;
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+.secondary-cta {
+    background-color: #1e3a8a; /* 濃いブルー */
+    color: #ffd700; /* ゴールドの文字 */
+    border: 2px solid #ffd700;
+    font-size: 1.1em;
+}
+
+.secondary-cta:hover {
+    background-color: #254b9f;
+}
+
+/* =======================================
+   3. ヒーローセクション
+   ======================================= */
+.hero-section {
+    padding: 80px 0

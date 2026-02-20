@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f8f9fa;
+    color: #333c5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 95%;
+    max-width: 1000px;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-bottom: 60px;
+}
+
+/* メインコンテンツの横並び */
+.content-wrapper {
+    display: flex;
+    /* 中央寄せから左寄せに変更し、マージンで位置を制御 */
+    justify-content: flex-start; 
+    align-items: center;
+    /* 全体を中央に寄せるための外枠調整 */
+    padding-left: 10%; 
+    gap: 40px; /* 隙間を 80px から 40px に狭めて右へ寄せました */
+    margin-bottom: 60px;
+}
+
+/* 左側の画像エリア */
+.pattern-grid {
+    flex: 0 1 300px; /* 勝手に広がらないように調整 */
+    /* 左側にオートマージンを入れることで右に押し出します */
+    margin-left: auto; 
+}
+
+.pattern-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 右側のリンクエリア */
+.simulator-options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: left;
+    /* 右側が広がりすぎないように制限 */
+    margin-right: auto; 
+}
+
+.simulator-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333c5e;
+    transition: opacity 0.2s;
+}
+
+.simulator-link:hover {
+    opacity: 0.7;
+}
+
+.simulator-link .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+    border-radius: 4px; /* アイコン画像自体の角丸 */
+}
+
+.simulator-link span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* フッター */
+.footer {
+    margin-top: 40px;
+}
+
+.back-link {
+    color: #333c5e;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    text-underline-offset: 4px;
+}
+
+/* スマホ対応 */
+@media (max-width: 850px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .simulator-options {
+        align-items: center;
+        text-align: center;
+    }
+
+    .simulator-link {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .simulator-link .icon {
+        margin-right: 0;
+    }
+}
