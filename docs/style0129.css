@@ -486,14 +486,14 @@ h2::after {
 
 .sim-sub {
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: .12em;
   color: rgba(51, 60, 94, .72);
   margin: 0 0 14px;
 }
 
 .sim-title {
-  font-size: clamp(30px, 3.4vw, 48px);
+  font-size: clamp(28px, 3.4vw, 48px);
   line-height: 1.15;
   letter-spacing: .02em;
   margin: 0 0 12px;
@@ -501,13 +501,13 @@ h2::after {
 
 /* h2全体下線があるので、simulationだけは余計な余白を整える */
 .sim-wrapper .sim-title {
-  padding-bottom: 0;
+  padding-bottom: 20px;
   margin-bottom: 12px;
 }
 
 .sim-browser {
   margin: 0 0 40px;
-  font-size: 13px;
+  font-size: 15px;
   color: rgba(51, 60, 94, .62);
 }
 
