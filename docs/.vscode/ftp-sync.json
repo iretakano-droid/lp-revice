@@ -1,0 +1,16 @@
+{
+  "remotePath": "/memory",
+  "host": "sv12766.xserver.jp",
+  "username": "idleboy@ymmn.co.jp",
+  "password": "ymmnidle0990$YM",
+  "port": 21,
+  "protocol": "ftp",
+  "secure": false,
+  "passive": true,
+  "uploadOnSave": true,
+  "ignore": [
+    ".vscode",
+    ".git",
+    ".DS_Store"
+  ]
+}
